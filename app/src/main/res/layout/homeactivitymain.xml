@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+
+    <TextView
+        android:id="@+id/textbmi"
+        android:layout_width="327dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="           Select Your Gender"
+        android:textColor="#8d959d"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMale"
+        android:layout_width="330dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbmi"
+        app:srcCompat="@drawable/custom_welcome" />
+
+    <ImageView
+        android:id="@+id/imageFemale"
+        android:layout_width="330dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMale"
+        app:srcCompat="@drawable/custom_welcome" />
+
+    <ImageView
+        android:id="@+id/imageOther"
+        android:layout_width="330dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFemale"
+        app:srcCompat="@drawable/custom_welcome" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/maleavatar"
+        android:layout_width="178dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMale"
+        app:layout_constraintEnd_toEndOf="@+id/imageMale"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/imageMale"
+        app:layout_constraintTop_toTopOf="@+id/imageMale"
+        app:layout_constraintVertical_bias="0.327"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/maleavatar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Female_avatar"
+        android:layout_width="178dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFemale"
+        app:layout_constraintEnd_toEndOf="@+id/imageFemale"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageFemale"
+        app:layout_constraintTop_toTopOf="@+id/imageFemale"
+        app:layout_constraintVertical_bias="0.344"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/femaleavatar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/othersavatar"
+        android:layout_width="178dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOther"
+        app:layout_constraintEnd_toEndOf="@+id/imageOther"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/imageOther"
+        app:layout_constraintTop_toTopOf="@+id/imageOther"
+        app:layout_constraintVertical_bias="0.275"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/other" />
+
+    <TextView
+        android:id="@+id/maletext"
+        android:layout_width="74dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="118dp"
+        android:text="     Male"
+        android:textColor="#8d959d"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMale"
+        app:layout_constraintEnd_toEndOf="@+id/imageMale"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageMale"
+        app:layout_constraintTop_toTopOf="@+id/maleavatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/femaletext"
+        android:layout_width="76dp"
+        android:layout_height="29dp"
+        android:text="   Female"
+        android:textColor="#8d959d"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFemale"
+        app:layout_constraintEnd_toEndOf="@+id/imageFemale"
+        app:layout_constraintStart_toStartOf="@+id/imageFemale"
+        app:layout_constraintTop_toBottomOf="@+id/Female_avatar" />
+
+    <TextView
+        android:id="@+id/othertext"
+        android:layout_width="74dp"
+        android:layout_height="26dp"
+        android:text="   Others"
+        android:textColor="#8d959d"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOther"
+        app:layout_constraintEnd_toEndOf="@+id/imageOther"
+        app:layout_constraintStart_toStartOf="@+id/imageOther"
+        app:layout_constraintTop_toBottomOf="@+id/others" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

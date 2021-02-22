@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="BMI"
+        android:textColor="#423C47"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationwelcome"
+        android:layout_width="416dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/running" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn"
+        android:layout_width="277dp"
+        android:layout_height="147dp"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fireworks" />
+
+    <Button
+        android:id="@+id/letsgo"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/button2"
+        android:text=" Let's Go"
+        android:textAllCaps="false"
+        android:textColor="#FBFBFB"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animationwelcome"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculator"
+        android:textColor="#FF423C47"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bmi"
+        app:layout_constraintStart_toEndOf="@+id/bmi"
+        app:layout_constraintTop_toTopOf="@+id/bmi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:text="Use this calculator to check your body mass index (BMI) and find out if you're healthy weight."
+        app:layout_constraintBottom_toTopOf="@+id/animationwelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
