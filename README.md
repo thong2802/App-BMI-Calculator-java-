@@ -3,11 +3,11 @@
 ## 
 1. [Links downd](https://drive.google.com/file/d/1IDT-IixJic5aCsfVLOBwVT-9w43s1DAh/view)
 ## Design : 
-   1. ![Design](../../app/img/anh1.png)
+   1. ![Design](./img/anh1.png)
     
-   2. ![Design](../../app/img/anh2.png)  
-   3. ![Design](../../app/img/anh3.png)
-   4. ![Design](../../app/img/anh4.png)
+   2. ![Design](./img/anh2.png)  
+   3. ![Design](./img/anh3.png)
+   4. ![Design](./img/anh4.png)
 ## Video demo 
 
 1. [![Demo CountPages alpha](https://j.gifs.com/D1zO0n.gif)](https://www.youtube.com/watch?v=2505oxYFVlM)
